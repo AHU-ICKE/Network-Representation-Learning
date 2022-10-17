@@ -1,0 +1,91 @@
+2021-06-03 15:14:02.590592: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /Share/apps/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/libfabric/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/lib/release:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/ipp/lib/intel64:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mkl/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/tbb/lib/intel64/gcc4.7:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/tbb/lib/intel64/gcc4.7:/Share/apps/intel/debugger_2019/libipt/intel64/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/daal/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+2021-06-03 15:14:02.590870: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+node_num 2708
+2021-06-03 15:14:07 INFO     Namespace(coarsen_level=3, data='/cora', embed_dim=128, lambd=0.63, rho=8, workers=4)
+graph.Attr (2708, 1433)
+kmeans totally cost 0.299910306930542
+2021-06-03 15:14:07 INFO     # groups have perfect jaccard idx (1.0): 83
+371204096
+371433472
+ coarse_graph.Attr.shape (1501, 1433)
+kmeans totally cost 0.18963909149169922
+2021-06-03 15:14:07 INFO     # groups have perfect jaccard idx (1.0): 31
+371433472
+371433472
+ coarse_graph.Attr.shape (857, 1433)
+kmeans totally cost 0.17548823356628418
+2021-06-03 15:14:08 INFO     # groups have perfect jaccard idx (1.0): 8
+371433472
+371433472
+ coarse_graph.Attr.shape (493, 1433)
+2021-06-03 15:14:08 INFO     Level 0 --- # nodes: 2708
+2021-06-03 15:14:08 INFO     Level 1 --- # nodes: 1501
+2021-06-03 15:14:08 INFO     Level 2 --- # nodes: 857
+2021-06-03 15:14:08 INFO     Level 3 --- # nodes: 493
+/Share/home/E19201088/CANE/HAANE/coarsen.py:21: RuntimeWarning: divide by zero encountered in float_scalars
+  norm_wgt[j] = adj_wgt[neigh] / np.sqrt(degree[i] * degree[neigh])
+(493, 1433)
+(493, 493)
+#############: <class 'numpy.ndarray'>
+Accelerated Attributed Network Embedding (AANE):
+######self.H.shape: (493, 128)
+$#$$$$self.block: 493
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+time elapsed: 0.54s
+373936128
+373936128
+Accelerated Attributed Network Embedding (AANE),
+**********************
+$#$$$$self.block: 857
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+374452224
+374452224
+time elapsed: 1.03s
+374452224
+374452224
+Accelerated Attributed Network Embedding (AANE),
+**********************
+$#$$$$self.block: 1501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+388833280
+388780032
+time elapsed: 1.91s
+388780032
+388780032
+Accelerated Attributed Network Embedding (AANE),
+**********************
+$#$$$$self.block: 2708
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+391684096
+391159808
+time elapsed: 3.73s
+time: 9.02556824684143
+391159808
+360112128
+train_rio 0.09999999999999998
+Micro_f1: 0.8465545529122231
+Macro_f1: 0.8327589188948075
+train_rio 0.19999999999999996
+Micro_f1: 0.8672358098754038
+Macro_f1: 0.8554471996921069
+train_rio 0.30000000000000004
+Micro_f1: 0.8738396624472573
+Macro_f1: 0.8608163614698283
+train_rio 0.4
+Micro_f1: 0.8789538461538461
+Macro_f1: 0.8680794335552339
+train_rio 0.5
+Micro_f1: 0.8807976366322009
+Macro_f1: 0.8691104263233008
+train_rio 0.6
+Micro_f1: 0.8818265682656827
+Macro_f1: 0.8697573934250785
+train_rio 0.7
+Micro_f1: 0.8863468634686347
+Macro_f1: 0.873988113873479
+train_rio 0.8
+Micro_f1: 0.8843173431734318
+Macro_f1: 0.8721420195775085
+train_rio 0.9
+Micro_f1: 0.896309963099631
+Macro_f1: 0.8828715922547576

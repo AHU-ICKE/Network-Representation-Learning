@@ -1,0 +1,11 @@
+2021-06-04 16:32:57.422549: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /Share/apps/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/libfabric/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/lib/release:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/ipp/lib/intel64:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mkl/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/tbb/lib/intel64/gcc4.7:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/tbb/lib/intel64/gcc4.7:/Share/apps/intel/debugger_2019/libipt/intel64/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/daal/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+2021-06-04 16:32:57.422839: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "haane.py", line 84, in <module>
+    graph, lowDAttrMat, input_label_path= read_data(ctrl, args)
+  File "haane.py", line 62, in read_data
+    label = read_label(input_label_path)
+  File "/Share/home/E19201088/CANE/HAANE/classification.py", line 64, in read_label
+    y[i] = int(l)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+srun: error: c0801: task 0: Exited with exit code 1

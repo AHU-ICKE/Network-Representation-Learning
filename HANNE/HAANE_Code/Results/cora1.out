@@ -1,0 +1,64 @@
+2021-06-03 14:35:50.533274: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /Share/apps/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/libfabric/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/lib/release:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mpi/intel64/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/ipp/lib/intel64:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/mkl/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/tbb/lib/intel64/gcc4.7:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/tbb/lib/intel64/gcc4.7:/Share/apps/intel/debugger_2019/libipt/intel64/lib:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/daal/lib/intel64_lin:/Share/apps/intel/compilers_and_libraries_2019.1.144/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+2021-06-03 14:35:50.533571: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+node_num 2708
+2021-06-03 14:36:05 INFO     Namespace(coarsen_level=1, data='/cora', embed_dim=128, lambd=0.63, rho=8, workers=4)
+graph.Attr (2708, 1433)
+kmeans totally cost 0.32673168182373047
+2021-06-03 14:36:06 INFO     # groups have perfect jaccard idx (1.0): 83
+371224576
+371453952
+ coarse_graph.Attr.shape (1501, 1433)
+2021-06-03 14:36:06 INFO     Level 0 --- # nodes: 2708
+2021-06-03 14:36:06 INFO     Level 1 --- # nodes: 1501
+/Share/home/E19201088/CANE/HAANE/coarsen.py:21: RuntimeWarning: divide by zero encountered in float_scalars
+  norm_wgt[j] = adj_wgt[neigh] / np.sqrt(degree[i] * degree[neigh])
+(1501, 1433)
+(1501, 1501)
+#############: <class 'numpy.ndarray'>
+Accelerated Attributed Network Embedding (AANE):
+######self.H.shape: (1501, 128)
+$#$$$$self.block: 1501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+time elapsed: 2.33s
+426057728
+426057728
+Accelerated Attributed Network Embedding (AANE),
+**********************
+$#$$$$self.block: 2708
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+426545152
+426319872
+time elapsed: 3.73s
+time: 7.07567572593689
+426319872
+395272192
+train_rio 0.09999999999999998
+Micro_f1: 0.8317883511074651
+Macro_f1: 0.8108813203302899
+train_rio 0.19999999999999996
+Micro_f1: 0.8562990309183203
+Macro_f1: 0.8418794927651028
+train_rio 0.25
+Micro_f1: 0.8577548005908421
+Macro_f1: 0.8451748098647298
+train_rio 0.30000000000000004
+Micro_f1: 0.8618143459915613
+Macro_f1: 0.8477901943126946
+train_rio 0.4
+Micro_f1: 0.8688615384615386
+Macro_f1: 0.8554429675946057
+train_rio 0.5
+Micro_f1: 0.8714180206794682
+Macro_f1: 0.8582388607821863
+train_rio 0.6
+Micro_f1: 0.8730627306273062
+Macro_f1: 0.8601257905024815
+train_rio 0.7
+Micro_f1: 0.8718327183271833
+Macro_f1: 0.8593544233473057
+train_rio 0.8
+Micro_f1: 0.8690036900369004
+Macro_f1: 0.8557566987513034
+train_rio 0.9
+Micro_f1: 0.8741697416974169
+Macro_f1: 0.8577713220459945
